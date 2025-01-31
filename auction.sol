@@ -61,8 +61,6 @@ contract NFTAuction {
     function finalizeAuction(uint256 _tokenId) external {
         require(auctions[_tokenId].active, "Auction canceled");
         require(auctions[_tokenId].endTime < block.timestamp, "Auction has not ended");
-        
-
     }
     
     // auction cancelled
